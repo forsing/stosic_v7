@@ -5,7 +5,7 @@ https://github.com/gajaka/luces-pvs-theories
 """
 
 """
-stosic_v7.py — 7-node krug (K=7 / prilagodjenje 7/39) — Brenier / monotone 1D mapa (GHQ 7/39)
+stosic_v7.py — 7-node krug (K=7 / prilagodjenje 7/39) — Brenier / monotone 1D mapa (7/39)
 
 Izvor (Stosić / LUCES):
   luces-pvs-theories-main/brenier_uniqueness.pvs
@@ -81,7 +81,7 @@ if __name__ == "__main__":
 
 
 """
-[3, 9, 14, 20, 26, 31, 37]
+[3, x, 14, y, 26, z, 37]
 """
 
 
@@ -97,27 +97,27 @@ Stosić jezgro	Ocena
 
 v1
 fisher_voronoi (d_F, centroid, nearest_regime)
-Da — najbliže strogo
 
 v2
 regime_sequence / prelaz iz istog PVS
-Uglavnom da — operaciona frekvencija prelaza je naša mapa, ali ideja je njegova
+Operaciona frekvencija prelaza je moja mapa, ali ideja je njegova. 
 
 v3
 dual_observability (obe karte)
-Delimično — A+B = remix v1+v2 signala, ne čitanje PVS formula
+A+B = remix v1+v2 signala, ne čitanje PVS formula
 
 v4
 blizina u prostoru mera / stabilnost
-Slabo — 1/(ε+d_F) težine su moja konstrukcija, ne direktan teorem
+1/(ε+d_F) težine su moja konstrukcija, ne direktan teorem
 
 v5
 entropy_along_geodesic (H na mid)
-Uglavnom da — filter po H(mid)≤max je blizu teoremima
+filter po H(mid)≤max je blizu teoremima
 
 v6
 velocity_asymmetry / lie shape direction
-Uglavnom da — √p razlike; suma max(u,0) je naša agregacija
+√p razlike; suma max(u,0) je naša agregacija
+
 Zaključak: strogo čist je uglavnom v1 (i solidno v5/v6/v2). v3 i naročito v4 su više moje operacione verzije „u duhu“ nego doslovan Stosić.
 """
 
